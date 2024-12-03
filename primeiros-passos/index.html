@@ -17,7 +17,7 @@
         <li><a href="#client">O que são <i>Clients</i>?</a></li>
         <li><a href="#server">O que são <i>Servers</i>?</a></li>
         <li><a href="#estrutura">Como é uma estrutura básica de um HTML?</a></li>
-        <li><a href="#diferença">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
+        <li><a href="#diferenca">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
         <li><a href="#referencias">Links de referências</a></li>
     </ul>
 
@@ -30,12 +30,6 @@
     </p>
 
     <ol>
-        <li><strong><u>Era Pré-computacional (Antes de 1940)</u></strong></li> 
-            <p>
-                <strong><i>Ábaco e máquinas mecânicas</i></strong>: O ábaco (aproximadamente 2400 a.C.) foi uma das primeiras ferramentas de cálculo. Mais tarde, matemáticos como Blaise Pascal e Gottfried Wilhelm Leibniz criaram máquinas de calcular mecânicas no século XVII.
-                Máquina Analítica de Charles Babbage: Idealizada no século XIX, foi um projeto visionário de um computador mecânico programável.
-                Cartões Perfurados: Desenvolvidos por Herman Hollerith no final do século XIX, foram amplamente utilizados em máquinas de tabulação, como no censo dos EUA em 1890.
-            </p>
         <li>
             <strong><u>Primeira Geração (1940-1956): Computadores a Válvula</u></strong>
         </li>
@@ -96,23 +90,23 @@
 
         <li><strong><u>Exemplos de clientes:</u></strong></li>
         <ul>
-            <li>Navegadores web: Google Chrome, Firefox, Safari. Eles enviam requisições HTTP para servidores web e exibem as páginas retornadas.</li>
-            <li>Aplicativos móveis: Aplicativos de redes sociais ou bancos funcionam como clientes conectados a servidores remotos.</li>
-            <li>Dispositivos físicos: Um smartphone ou computador que consome serviços online é considerado um cliente.</li>
+            <li><strong><i>Navegadores web</i></strong>: Google Chrome, Firefox, Safari. Eles enviam requisições HTTP para servidores web e exibem as páginas retornadas.</li>
+            <li><strong><i>Aplicativos móveis</i></strong>: Aplicativos de redes sociais ou bancos funcionam como clientes conectados a servidores remotos.</li>
+            <li><strong><i>Dispositivos físicos</i></strong>: Um smartphone ou computador que consome serviços online é considerado um cliente.</li>
         </ul>
 
         <li><strong><u>Tipos de Clientes:</u></strong></li>
         <ul>
-            <li>Thin Clients (Clientes Leves): Executam poucas operações localmente e dependem amplamente do servidor. Exemplo: Navegadores web.</li>
-            <li>Thick Clients (Clientes Robustos): Processam muitas operações localmente antes de interagir com o servidor. Exemplo: Softwares instalados em desktops.</li>
-            <li>Hybrid Clients: Uma combinação de ambos, processando dados localmente e no servidor.</li>
+            <li><strong><i>Thin Clients (Clientes Leves)</i></strong>: Executam poucas operações localmente e dependem amplamente do servidor. Exemplo: Navegadores web.</li>
+            <li><strong><i>Thick Clients (Clientes Robustos)</i></strong>: Processam muitas operações localmente antes de interagir com o servidor. Exemplo: Softwares instalados em desktops.</li>
+            <li><strong><i>Hybrid Clients</i></strong>: Uma combinação de ambos, processando dados localmente e no servidor.</li>
         </ul>
 
         <li><strong><u>Protocolos usados por clientes:</u></strong></li>
         <ul>
-            <li>HTTP/HTTPS: Para acessar sites.</li>
-            <li>FTP: Para transferência de arquivos.</li>
-            <li>SMTP/IMAP/POP3: Para envio e recebimento de e-mails.</li>
+            <li><strong><i></i>HTTP/HTTPS</i></strong>: Para acessar sites.</li>
+            <li><strong><i></i>FTP</i></strong>: Para transferência de arquivos.</li>
+            <li><strong><i></i>SMTP/IMAP/POP3</i></strong>: Para envio e recebimento de e-mails.</li>
         </ul>
     </ol>
     
@@ -188,45 +182,113 @@
     
     <small><a href="#inicio"> Voltar para o Índice</a></small>
 
-
-
-
-
-
-
-
-
+    <hr>
 
     <h2 id="estrutura">Como é uma estrutura básica de um HTML?</h2>     
-       
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+
+    <p>HTML (HyperText Markup Language) é a linguagem padrão para criar páginas da web. A estrutura básica de um arquivo HTML inclui elementos essenciais para definir o conteúdo e a organização da página.</p>
+
+    <p>
+            <!DOCTYPE html>
+            <html lang="pt-BR">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Minha Página</title>
+            </head>
+            <body>
+                <h1>Bem-vindo!</h1>
+                <p>Este é um exemplo de estrutura básica de HTML.</p>
+            </body>
+            </html>
+    </p>
+
+
+
+    <h3>Descrição dos Elementos</h3>
+    <ol>
+        <li>DOCTYPE html</li>
+
+        <p>Declaração que indica ao navegador o tipo de documento HTML (HTML5).</p>
+
+        <li>html</li>
+
+        <p>Elemento raiz que engloba todo o conteúdo da página.</p>
+
+        <li>Atributo lang="pt-BR"</li>
+        
+        <p>Define o idioma do documento, importante para acessibilidade e SEO.</p>
+        
+        <li>head</li>
+    
+        <p>Contém metadados da página, como charset, título, e links para recursos externos (ex.: CSS, scripts).</p>
+        
+        <li>meta charset="UTF-8"</li>
+    
+        <p>Especifica a codificação de caracteres, permitindo suporte a caracteres especiais como acentos.</p>
+
+        <li>meta name="viewport" content="width=device-width, initial-scale=1.0"</li>
+    
+        <p>Torna a página responsiva para dispositivos móveis.</p>
+
+        <li>title</li>
+    
+        <p>Define o título que aparece na aba do navegador.</p>
+
+        <li>body</li>
+    
+        <p>Contém o conteúdo visível da página, como textos, imagens, links e outros elementos.</p>
+
+    </ol>
+
+    <small><a href="#inicio"> Voltar para o Índice</a></small>
+
+    <hr>
 
     <h2 id="diferenca">Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+
+    <p>Em HTML, as listas são usadas para organizar informações em formato de itens. Há dois tipos principais: listas ordenadas e listas não ordenadas.</p>
+
+    <ol>
+        <li>
+            <strong>Listas Ordenadas</strong> (<a href="https://www.w3schools.com/tags/tag_ol.asp">ol</a>):
+        </li>
+        <ol>
+            <li>Representam itens que seguem uma ordem específica ou sequência.</li>
+            <li>Os itens são numerados automaticamente pelo navegador.</li>
+            <li>Usadas quando a ordem dos elementos é importante, como em instruções passo a passo ou classificações.</li>
+        </ol>
+    </ol>
+
+    <ul>
+        <li><strong>Listas Não Ordenadas</strong> (<a href="https://www.w3schools.com/tags/tag_ul.asp">ul</a>):</li>
+
+        <ul>Representam itens em que a ordem não é importante.</ul>
+        <ul>Os itens aparecem com marcadores (por padrão, círculos).</ul>
+        <ul> Usadas para agrupar informações ou elementos que não seguem uma sequência específica.</ul>
+    </ul>
+
+    <small><a href="#inicio"> Voltar para o Índice</a></small>
+
+    <hr>
 
     <h2 id="referencias">Links de referências</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Coloque links para outras páginas que falam sobre estes assuntos. Não esquece de que precisa abrir em outra aba/janela do navegador.</p>
     <ul>
-        <li>Morley, D., & Parker, C. S. (2016). Understanding Computers: Today and Tomorrow. Cengage Learning.</li>
-        <li>Ceruzzi, P. E. (2012). Computing: A Concise History. The MIT Press.</li>
+
         <li>História dos Computadores - Computer History Museum (CHM). Disponível em: <a href="#" target="_blank">computerhistory.org</a></li>
 
         <li><a href="https://www.amazon.com.br/Redes-computadores-Andrew-S-Tanenbaum/dp/857605924X" target="_blank">Tanenbaum, A. S., & Wetherall, D. J. (2010). Computer Networks</a>. Pearson Education.</li>
         <li>Kurose, J. F., & Ross, K. W. (2017). Computer Networking: A Top-Down Approach. Pearson.</li>
         <li>Stallings, W. (2020). Foundations of Modern Networking: SDN, NFV, QoE, IoT, and Cloud. Addison-Wesley.</li>
 
+        <li>Mozilla Developer Network (MDN). <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">Documentação Oficial de HTML.</a></li>
+        <li>W3Schools. <a href="https://www.w3schools.com/html/default.asp" target="_blank">Tutorial de HTML</a>.</li>
 
+        <li><a href="http://dio.me"  target="_blank">http://dio.me</a></li>
+        <li><a href="http://w3c.org"  target="_blank">http://w3c.org</a></li>
 
-        
+        <small><a href="#inicio"> Voltar para o Índice</a></small>
 
-        <li><a href="#">http://dio.me</a></li>
-        <li><a href="#">http://w3c.org</a></li>
     </ul>
 
 </body>
